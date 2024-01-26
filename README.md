@@ -34,8 +34,6 @@ Para la persistencia de datos, se utilizó H2, una base de datos en memoria, par
 
 Las decisiones sobre validaciones de entrada y manejo de excepciones se tomaron buscando proporcionar una experiencia de usuario clara y consistente, retornando respuestas informativas en caso de errores.
 
-Swagger se integró para proporcionar documentación interactiva de la API, facilitando la comprensión y prueba de los endpoints por parte de desarrolladores y usuarios finales.
-
 ## Instalación y Uso
 
 Clone el repositorio en su computadora y ejecute el siguiente comando en la raíz del proyecto:
