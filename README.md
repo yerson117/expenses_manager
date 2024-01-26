@@ -34,7 +34,7 @@ Para la persistencia de datos, se utilizó H2, una base de datos en memoria, par
 
 Las decisiones sobre validaciones de entrada y manejo de excepciones se tomaron buscando proporcionar una experiencia de usuario clara y consistente, retornando respuestas informativas en caso de errores.
 
-##¿Qué haría de manera diferente si se le asignara más tiempo?
+## ¿Qué haría de manera diferente si se le asignara más tiempo?
 
 Profundizaria en mejorar el metodo que retorna el gasto medio por periodo, ya que se pueden listar de maneras diferentes pasandole como parametros las fechas y el tipo de periodo que se quiere visualizar, ademas de eso mejoraria las llamadas por rest con algun sistema de autenticación de API rest.
 
