@@ -14,6 +14,25 @@ Retorna una lista de los gastos registrados en el mes actual.
 `POST /expenses`
 Permite a un usuario crear un nuevo registro de gasto.
 
+ejemplo de body aceptado: 
+
+```json
+{
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "telefono": "1234567890",
+  "email": "juan.perez@example.com",
+  "curp": "JUPE010101HDFABC01",
+  "rfc": "JUPE010101000",
+  "nombreDelGasto": "Compra de equipo",
+  "descripcion": "Equipo de cómputo",
+  "fechaInicio": "2024-01-01",
+  "fechaFin": "2024-01-02",
+  "estado": "PENDIENTE",
+  "monto": 15000.00
+}
+```
+
 ### Marcar Gasto como Pagado
 `PUT /expenses/{id}/pay`
 Marca un gasto específico como pagado según el ID proporcionado.
@@ -21,6 +40,9 @@ Marca un gasto específico como pagado según el ID proporcionado.
 ### Obtener Gastos por Estado
 `GET /expenses/state`
 Obtiene los gastos filtrados por su estado (pagado/pendiente).
+
+queryParam
+status = PAGADO,PENDIENTE ; PAGADO ; PENDIENTE
 
 ### Calcular Promedio de Gastos por Período
 `GET /expenses/avg/{period}`
